@@ -1,0 +1,53 @@
+*{
+	margin: 0px;
+	padding: 0;
+	/*default fong*/
+	/*font-family: "Open Sans", sans-serif;*/
+	font-family: 'Fredoka', sans-serif;
+/*	font-family: 'Open Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;*/
+	/*box-sizing*/
+	font-size: 1rem;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+header img {
+	width:30px;
+	padding: 2px;
+	}
+
+header ul {
+	margin-bottom: 0;
+}
+
+header li {
+	display: inline-flex;
+}
+
+#navbar-brand {
+	padding: 0;
+}
+
+footer img {
+	width:50px;
+	padding: 2px;
+	}
+
+footer ul {
+	margin-bottom: 0;
+}
+
+footer li {
+	display: inline-flex;
+}
+
+
+
+
+header {
+
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
