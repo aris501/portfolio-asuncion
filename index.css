@@ -2,52 +2,71 @@
 	margin: 0px;
 	padding: 0;
 	/*default fong*/
-	/*font-family: "Open Sans", sans-serif;*/
-	font-family: 'Fredoka', sans-serif;
-/*	font-family: 'Open Sans', sans-serif;
-	font-family: 'Poppins', sans-serif;*/
+font-family: 'Fredoka', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oxygen', sans-serif;
+font-family: 'Poppins', sans-serif;
 	/*box-sizing*/
-	font-size: 1rem;
+/*	font-size: 1rem;*/
 	box-sizing: border-box;
+	font-kerning: normal;
+	font-weight: normal;
+	font-stretch: expanded;
 	text-align: center;
+	font-size: 1.16rem;
+		color: white;
+	font-stretch: ultra-expanded;
+  	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
-header img {
-	width:30px;
-	padding: 2px;
-	}
+.jumbotron {
+	text-shadow: palevioletred;
+	font-family: 'Oxygen', sans-serif; 
+	font-size: large;
+	font-stretch: 70%;
+	font-kerning: 70%;
+	color: white;
+	font-stretch: ultra-expanded;
+  	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 
-header ul {
-	margin-bottom: 0;
 }
 
-header li {
-	display: inline-flex;
+.container h1 {
+	color: deepskyblue;
+	font-size: 4rem;
+	font-stretch: ultra-expanded;
 }
 
-#navbar-brand {
-	padding: 0;
+#home {
+	/*backgorund image property allows us to add a background image from an online source or a local/relative source*/
+	background-image: url(https://images.pexels.com/photos/189349/pexels-photo-189349.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500);
+	/*stretches the image to cover the full area of the element*/
+	background-size: cover;
+	/*background-repeat:  no-repeat to disable the image repetetion especially if it can't cover the element*/
+	background-repeat: no-repeat;
+	/*background-position:  center*/
+	background-position: center;
+	/*overlay for */
 }
 
-footer img {
-	width:50px;
-	padding: 2px;
-	}
-
-footer ul {
-	margin-bottom: 0;
-}
-
-footer li {
-	display: inline-flex;
-}
-
-
-
-
-header {
-
-	position: fixed;
-	top: 0;
+#gmap_canvas {
+	height: 80vh;
 	width: 100%;
+}
+
+.fa-icons {
+	padding: .8rem;
+	font-size: 2rem;
+/*	color: yellow;*/
+}
+
+.fa-brands{
+	padding: .8rem;
+	font-size: 2rem;
+/*	color: yellow;*/
+}
+
+html {
+	scroll-behavior: smooth;
 }

@@ -3,171 +3,218 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Fan Page</title>
+	<title>Bootstrap Components</title>
+
+	<!-- font awesome icons -->
+	<script src="https://kit.fontawesome.com/ae21839e74.js" crossorigin="anonymous"></script>
+
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Open+Sans&family=Poppins&display=swap" rel="stylesheet">
+<!-- Montserrat -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500&family=Montserrat&family=Open+Sans&family=Oxygen&family=Poppins&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="./index.css">
+
 </head>
 <body>
-	<header>
-		<div class="container-fluid bg-secondary">
-			<div class="row">
-				<div class="col-12 bg-transparent text-center">
-					<ul>
-						<li>
-							<a href="https://www.facebook.com/ukitcustom"><img src="./images/facebook.png"></a>
-						</li>
-						<li>
-							<a href="https://twitter.com/artstarcustom/"><img src="./images/twitter.png"></a>
-						</li>
-						<li>
-							<a href="https://www.google.com/search?q=starwars&sxsrf=APq-WBsnjcjIZ2N8iMIwHB6G0ayoj0YfoA%3A1647343689403&source=hp&ei=SXgwYqzpFvLh2roPoo--6Ac&iflsig=AHkkrS4AAAAAYjCGWeXb6UTl4ymvHJpehoowDCI-e1jR&ved=0ahUKEwjssba7gcj2AhXysFYBHaKHD30Q4dUDCAc&uact=5&oq=starwars&gs_lcp=Cgdnd3Mtd2l6EAMyCggAEIAEELEDEAoyCggAEIAEELEDEAoyDQguEIAEELEDENQCEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAoyBwgAEIAEEAo6BAgjECc6CAguENQCEJECOgUIABCRAjoRCC4QgAQQsQMQgwEQxwEQowI6CwgAEIAEELEDEIMBOhEILhCABBCxAxCDARDHARDRAzoKCAAQgAQQhwIQFDoICAAQgAQQsQM6CwguEIAEELEDEIMBOggIABCxAxCDAToWCC4QgAQQhwIQsQMQgwEQxwEQrwEQFDoLCC4QsQMQ1AIQkQI6DQgAEIAEEIcCELEDEBQ6CwguEIAEELEDENQCOgUIABCABDoLCC4QgAQQxwEQrwE6CwguEIAEEMcBEKMCOgoILhCABBDUAhAKUABY-AxgsQ5oAHAAeACAAY4CiAGFCpIBBTAuNy4xmAEAoAEB&sclient=gws-wiz"><img src="./images/google.png"></a>
-						</li>
-
-						<li>
-							<a href="https://www.instagram.com/ukit_custom/"><img src="./images/instagram.png"></a>
-						</li>
-						<li>
-							<a href="https://www.youtube.com/user/starwars"><img src="./images/youtube.png"></a>
-						</li>
-					</ul>
-	 			</div>	<!-- end header col -->
-			</div> <!-- end header row -->
-		</div> <!-- end header container -->
-	</header>
-
 <!-- navbar -->
-<!-- navbar -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-primary text-center" id="top">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!-- sticky-top can be used also to replace fixed-top -->
+  <a class="navbar-brand" href="https://facebook.com/ukitcustom"><img src="./images/UkitCustoms.png"> </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-	  <!-- HAMBURGER BUTTON -->
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarMenu" aria-controls="navBarMenu" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
-	  <!-- END HAMBURGER BUTTON -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Tools">Tools</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Contact">Contact</a>
+      </li>
+    </ul>
 
-	  <div class="collapse navbar-collapse" id="navBarMenu">
-	    <ul class="navbar-nav mx-auto"><!-- or mx-auto, or ml-auto -->
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#projects">MERN Projects</a>
-	      </li>
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#toolssection">Tools <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#contactsection">Contacts</a>
-	      </li>
-	      
+  </div>
+</nav>
+<!-- end navbar --> 
 
+	<div class="container">
+		<div class="row flex-column d-none d-md-flex align-items-center justify-content-center mt-5 jumbotron text-primary" id="home">
+			<div class="col-10 col-md-2">
+				<img src="./images/Hombre_Man_clip_art_medium.png" class="img-fluid rounded-circle">
 
-	      <!-- <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li> -->
-	    </ul>
-
-	  </div>
-	</nav>
-<!-- end navbar -->
-		
-	</header> <!-- end header -->
-
-	<section id="Projects">
-		<h2 class="text-center mt-5">Projects</h2>
-<!-- 		<div class="bg-transparent d-flex flex-row flex-wrap mb-4 mx-auto"> -->
-			<div class="bg-dark d-flex flex-row justify-content-center mb-4">
-	  			<div class="p-2" id="Thumbnail01"><a href="#Sample01"><img src="./images/THUMB_project_sample_01.jpg" class="img-fluid"></a></div>
-	  			<div class="p-2" id="Thumbnail02"><a href="#Sample02"><img src="./images/THUMB_project_sample_02.jpg" class="img-fluid"></a></div>
-	  			<div class="p-2" id="Thumbnail03"><a href="#Sample03"><img src="./images/THUMB_project_sample_03.jpg" class="img-fluid"></a></div>
-	  			<div class="p-2" id="Thumbnail03"><a href="#Sample03"><img src="./images/THUMB_project_sample_04.jpg" class="img-fluid"></a></div>
-	  			<div class="p-2" id="Thumbnail03"><a href="#Sample03"><img src="./images/THUMB_project_sample_05.jpg" class="img-fluid"></a></div>
-	  		</div>
-
-	  		<div class="bg-dark d-flex flex-row justify-content-center mb-4">
-	  			<div class="p-2"><a href="Proj01"></a><img src="./images/THUMB_project_sample_06.jpg" class="img-fluid"></div>
-	  			<div class="p-2"><a href="Proj01"></a><img src="./images/THUMB_project_sample_07.jpg" class="img-fluid"></div>
-	  			<div class="p-2"><a href="Proj01"></a><img src="./images/THUMB_project_sample_08.jpg" class="img-fluid"></div>
-	  			<div class="p-2"><a href="Proj01"></a><img src="./images/THUMB_project_sample_09.jpg" class="img-fluid"></div>	
-	  		</div>
-
-	  		<div class="col-12 col-md-6 text-center mx-auto">
-				<p>For your perusal, I humbly present, some of my previous projects.  The top images show the 3d-printed prototypes mostly done this pandemic.  While the second row, are a combination of architectural, pop-culture, and anime finished / work-in-progress projects in SolidWorks.
-
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			</div>
+			<div class="col-12 col-md-4 text-center">
+				<h1 class="mt-4 mb-7">Aris Asuncion</h1>
+				<h3 class="my-2">3d Printing, Scale figure enthusiast, and Toy Photographer</h3>
+			</div>
+			<div class="col-12 col-md-12 text-center text-white">
+				<p>Prior to the pandemic, Aris worked on scaled down model production with the Baguio city based fabrications Lab of Saint Louis University - College of Architectue. Also known as SIRIB. He specializes in data acquisition, digital sculpting, and 3d printing.  His passion for sci-fi pop culture, anime, and an ever growing collection of different scales of statues and action figures has influenced him to register as a toy store sole proprietor with the Department of Trade and Industry (DTI).  Admitedly, he has since realized and acknowledged how much he lacks in advertising skills, business management, knowledge / tools in photography and web development. His first step, then, to address these inadequacies was to take up this full-stack course with Zuitt.  He hopes to keep up with his peers in this fast paced learning environment and wishes that he would be able to use whatever he'll learn to complement his humble business.
 				</p>			
 			</div>
-		<a href="#top">Back to Top</a>	
+		</div>	
+<!-- end of home -->
+	
+		<div class="row mt-10" id="Projects">
+			<!-- We will use mx-auto here because this row will contain only 1 column. -->
+			<div class="col-12 col-md-6 mx-auto">
+				<!-- copied from bootstrap components -->
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+					<h3 class="text-center mt-6"><a href="#home">Home</a></h3>
+  				<ol class="carousel-indicators">
+    				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    				<li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+  				</ol>
+  								<div class="carousel-inner">
+    							<div class="carousel-item active">
+      						<img class="d-block w-100" src="./images/project_sample_0.jpg" alt="First slide">
+    							</div>
+    							<div class="carousel-item">
+      						<img class="d-block w-100" src="./images/project_sample_01.jpg" alt="First slide">
+    							</div>
+    							<div class="carousel-item">
+      						<img class="d-block w-100" src="./images/project_sample_03.jpg" alt="First slide">
+    							</div>
+    							<div class="carousel-item">
+      								<img class="d-block w-100" src="./images/project_sample_04.jpg" alt="First slide">
+    							</div>
+    							<div class="carousel-item">
+      								<img class="d-block w-100" src="./images/project_sample_05.jpg" alt="First slide">
+    							</div>
+    							<div class="carousel-item">
+      								<img class="d-block w-100" src="./images/project_sample_06.jpg" alt="First slide">
+    							</div>
+    														<div class="carousel-item">
+    							  								<img class="d-block w-100" src="./images/project_sample_07.jpg" alt="First slide">
+    														</div>
+  								</div>
+  								<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    									<span class="sr-only">Previous</span>
+  								</a>
+  								<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    									<span class="sr-only">Next</span>
+  								</a>
+				</div> <!-- end carousel -->
+			</div> <!-- end col -->
+		</div> <!-- end row -->
+		<h2>Projects</h2>
+		<hr>
+		<h4><a href="#home">Back to top</h4>
+		<section>
+			
+			  <h2 class ="text-center mt-5" id="Tools">Tools</h2>
+<!-- 			  <h3 class="text-center mt-5"> Tools</h3> -->
+			  		<div class="row flex-column align-items-center justify-content-center mt-5 mx-auto">
+<!--  				<div class="bg-white d-flex flex-row justify-content-center align-items-center mb-4" style="height:20vh;">  -->
+				 		<div class="p-1"><img src="./images/Artec_spider.jpg"></div>
+						<div class="p-1"><img src="./images/meshmixer.png"></div>
+				 		<div class="p-1"><img src="./images/meshlabLogo.png"></div>
+				<hr>
+				<h4><a href="#home">Back to top</h4>
+			  		</div>
+			  	  <h3 class ="text-center mt-5">Tools</h3>
+					 	<div class="bg-white d-flex flex-row justify-content-center flex-wrap mb-4 style="height:3vh;> 
+				 				<div class="p-1"><<img src="./images/Solidworks.jpg"></div>
+				 				<div class="p-1"><img src="./images/Zbrush.jpg"></div>
+				  			<div class="p-1"><img src="./images/Photoshop.jpg"></div>
+				  			<div class="p-1"><img src="./images/Elegoo.png"></div>		 						
+				  			<div class="p-1"><img src="./images/creality.png"></div>		
+<!-- 		<hr>
+		<h4><a href="#home">Back to top</h4> -->
+				  	</div>
 
-	</section> <!-- #Projects -->
-	<hr>
-
-	<section id="Gallery">
-		<h2 class="text-center mt-5">Gallery</h2>
-		<div class="row flex-column align-items-center justify-content-center mt-5 mx-auto">
-	  		<div class="col-7 col-md-8 p-5" id="Sample01"><a href="#Thumbnail01"><img src="./images/project_sample_01.jpg" class="img-fluid"></a></div>
-	  		<div class="col-7 col-md-6 p-5" id="Sample02"><a href="#Thumbnail02"><img src="./images/project_sample_02.jpg" class="img-fluid"></a></div>
-	  		<div class="col-7 col-md-6 p-5" id="Sample02"><a href="#Thumbnail02"><img src="./images/project_sample_02b.jpg" class="img-fluid"></a></div>
-	  		<div class="col-7 col-md-10 p-5" id="Sample03"><a href="#Thumbnail03"><img src="./images/project_sample_03.jpg" class="img-fluid"></a></div>
-	  		<div class="col-7 col-md-10 p-5" id="Sample04"><a href="#Thumbnail04"><img src="./images/project_sample_04.jpg" class="img-fluid"></a></div>
-	  		<div class="col-7 col-md-10 p-5" id="Sample05"><a href="#Thumbnail05"><img src="./images/project_sample_05.jpg" class="img-fluid"></a></div>
-	  	</div>
-
-		
-	</section>
+		</section>
 
 
-	<section>
-		<div class="container-fluid bg-white">
-			<a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/supplemental-privacy-policy-for-philippines/"> Supplemental Privacy Policy for the Philippines</a>			
-		</div>
-	</section>
 
-	<section id="Tools">
-		<h3>TOOLS</h3>
-	</section><!-- END #TOOLS -->
 
-	<footer>
-		<a href="#top">Back to Top</a>
-		<h4>Technologies used:</h4>
-		<div class="container-fluid bg-secondary">
+		<!-- contact section -->
+	
+ 			<hr>
+		<h4><a href="#home">Back to top</h4>
+				<h1 class="text-center my-5" id="Contact"><a href="#foot">Contact Us!</a></h1>
 			<div class="row">
-				<div class="col-12 bg-transparent text-center">
-					<ul>
-						<li>
-							<a href="#"><img src="./images/html5.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="./images/css3.png"></a>
-						</li>
-						<li>
-							<a href="#"><img src="./images/js.png"></a>
-						</li>
-					</ul>
-	 			</div>	<!-- end header col -->
-			</div> <!-- end header row -->
-		</div> <!-- end header container -->
+				<div class="col-12 col-md-6">
+					<h3 class="text-center">Visit Us!</h3>
+					<h5>Artstar Toys Shop</h5>
+					<h6>Puso ng Baguio Building</h6>
+					<h6>Phone: 0916020210</h6>
+					<!-- google maps -->
+					<iframe id="gmap_canvas" src="https://maps.google.com/maps?q=session%20road&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<!-- end google maps -->			
+				</div>
+				<div class="col-12 col-md-6">
+					<h3 class="text-center">Message Us</h3>	
 
-	</footer>
+					<!-- form -->
+					<form>
+						<div class="form-group">
+							<label for="txt-username">Name:</label>
+							<input type="text" name="name" id="txt-username" placeholder="Enter Full Name" class="form-control">
+						</div>	
+						<div class="form-group">
+							<label for="txt-email">Email:</label>
+							<input type="email" name="email" id="txt-mail" placeholder="Enter Email" class="form-control">
+						</div>		
+						<div class="form-group">
+							<label for="txt-select">Select:</label>
+							<select class="form-control" id="txt-select" name="sampleSelect">
+								<option>Sample1</option>
+								<option>Sample2</option>								
+								<option>Sample3</option>
+								<option>Sample4</option>
+							</select>
+						</div>
+						<div>
+							<div class="form-group">
+								<label for="txt-message">Message:</label>
+								<textarea class="form-control" id="txt-message" rows="3"></textarea>
+							</div>							
+						</div>	
+						<button type="submit" class="btn btn-block btn-outline-primary">Submit</button>
+						<button type="reset" class="btn btn-block btn-outline-primary">Reset</button>
+						</div>
+					</form>	<!-- end form -->
 
+				</div> <!-- end col contact section -->
+
+			</div> <!-- end row contact section -->
+
+					<h5 class="text-center my-5" id="home"><a href="#home">Back to top</a></h5>
+		<!-- footer -->
+		<footer class="p-3 bg-primary mt-5" id="foot">
+			<p class="text-center text-white">ArtStar Toys Shop is registered in the Department of Trade and Industry.</p>
+				<div class="d-flex justify-content-center px-5">
+				<a href="https://facebook.com/ukitcustom" target="_blank" class="text-white" mx-2><i class="fa-brands fa-facebook fa-icons"></i></a>
+				<a href="https://instagram.com/ukit_custom" target="_blank" class="text-white" mx-2><i class="fa-brands fa-instagram fa-icons"></i></a>
+				<a href="https://www.artstation.com/aris501" target="_blank" class="text-white" mx-2><i class="fa-brands fa-artstation"></i></i></a>
+
+			</div>
+		</footer>
+
+
+	</div>
+
+
+
+<!-- Bootstrap dependencies -->
 	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-
 </body>
 </html>
